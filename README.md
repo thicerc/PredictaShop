@@ -1,25 +1,48 @@
-# 🎈 Blank app template
+# PredictaShop
 
-A simple Streamlit app template for you to modify!
+**Maquina de previsão de comportamento do consumidor em e-commerce (Olist)**
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+## Descrição
 
-### How to run it on your own machine
+PredictaShop é uma aplicação de machine learning desenvolvida com Streamlit que prevê o comportamento de consumidores em plataformas de e-commerce, utilizando dados do dataset Olist.
 
-Prerequisite: install `uv` if you don't already have it.
+## Requisitos
 
+- Python >=3.12,<3.13
+- Dependências conforme especificado em `pyproject.toml`
+
+## Instalação
+
+### Com UV (recomendado)
+
+```bash
+uv pip install -e .
 ```
-$ curl -LsSf https://astral.sh/uv/install.sh | sh
+
+### Com pip padrão
+
+```bash
+pip install -r requirements.txt
 ```
 
-1. Sync the dependencies
+## Execução
 
-   ```
-   $ uv sync
-   ```
+Para iniciar a aplicação Streamlit:
 
-2. Run the app
+```bash
+streamlit run streamlit_app.py
+```
 
-   ```
-   $ uv run streamlit run streamlit_app.py
-   ```
+## Dependências Principais
+
+- **streamlit** - Framework web para ML
+- **pandas** - Manipulação de dados
+- **scikit-learn** - Algoritmos de ML
+- **xgboost** - Gradient boosting
+- **lightgbm** - Light gradient boosting
+- **shap** - Interpretabilidade de modelos
+- **matplotlib** & **plotly** - Visualizações
+
+## Licença
+
+Apache License 2.0
